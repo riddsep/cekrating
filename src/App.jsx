@@ -315,15 +315,15 @@ function WatchedSummary({ watched }) {
     </div>
   );
 }
-// function WatchedMoviesList({ watched }) {
-//   return (
-//     <ul className="list">
-//       {watched.map((movie) => (
-//         <WatchedMovie movie={movie} key={movie.imdbID} />
-//       ))}
-//     </ul>
-//   );
-// }
+function WatchedMoviesList({ watched }) {
+  return (
+    <ul className="list">
+      {watched.map((movie) => (
+        <WatchedMovie movie={movie} key={movie.imdbID} />
+      ))}
+    </ul>
+  );
+}
 
 function WatchedMovie({ movie }) {
   return (
