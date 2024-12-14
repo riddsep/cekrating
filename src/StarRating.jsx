@@ -59,8 +59,6 @@ function StarRating({
   );
 }
 
-export default StarRating;
-
 const Star = ({ onClick, full, onHoverIn, onHoverOut, size, color }) => {
   const starStyle = {
     width: `${size}px`,
@@ -102,3 +100,5 @@ const Star = ({ onClick, full, onHoverIn, onHoverOut, size, color }) => {
     </span>
   );
 };
+
+export default StarRating;
