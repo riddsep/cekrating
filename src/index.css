@@ -244,6 +244,7 @@ body {
 
 .details header {
   display: flex;
+  position: relative;
 }
 
 .details section {
@@ -306,6 +307,12 @@ body {
 .badge {
   display: flex;
   gap: 5px;
+}
+.btn-back {
+  position: absolute;
+  padding: 6px;
+  border-radius: 50%;
+  border: 0;
 }
 
 /*
