@@ -1,7 +1,8 @@
 export function Logo() {
   return (
     <div className="logo">
-      <h1>MovieBuddy</h1>
+      <h1>CekRating</h1>
+      <span role="img">💯</span>
     </div>
   );
 }

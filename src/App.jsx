@@ -4,7 +4,7 @@ import { ErrorMessage } from "./components/ErrorMessage";
 import { NavBar } from "./components/NavBar";
 import { Search } from "./components/Search";
 import { NumResults } from "./components/NumResults";
-import { Main } from "./components/Main.1";
+import { Main } from "./components/Main";
 import { Box } from "./components/Box";
 import { MovieList } from "./components/MovieList";
 import { MoviesDetails } from "./components/MoviesDetails";
