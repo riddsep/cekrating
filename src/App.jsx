@@ -13,7 +13,6 @@ export default function App() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(null);
-  console.log(watched);
 
   function handleSelectMovie(id) {
     setSelectedId((selectedId) => (selectedId === id ? null : id));
@@ -214,11 +213,9 @@ function MoviesDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
       Runtime: Number(Runtime.split(" ").at(0)),
       userRating,
     };
-    console.log(Runtime);
     onAddWatched(newWatchedMovie);
     onCloseMovie();
   }
-  console.log(movie);
   useEffect(() => {
     async function getMovieDetails() {
       setIsLoading(true);
@@ -226,7 +223,6 @@ function MoviesDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
         `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
       );
       const data = await res.json();
-      console.log(data);
       setMovie(data);
       setIsLoading(false);
     }
