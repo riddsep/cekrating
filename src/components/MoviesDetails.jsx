@@ -61,7 +61,7 @@ export function MoviesDetails({
     document.title = Title;
 
     return function () {
-      document.title = "usepopcorn";
+      document.title = "moviebuddy";
     };
   }, [Title, selectedId]);
 
