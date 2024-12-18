@@ -30,6 +30,7 @@ export function MoviesDetails({
     Director,
     Genre,
   } = movie;
+
   function handleAdd() {
     const newWatchedMovie = {
       imdbID: selectedId,
@@ -43,6 +44,7 @@ export function MoviesDetails({
     onAddWatched(newWatchedMovie);
     onCloseMovie();
   }
+
   useEffect(() => {
     async function getMovieDetails() {
       setIsLoading(true);
