@@ -17,7 +17,7 @@ export default function App() {
   const [movies, setMovies] = useState([]);
   const [watched, setWatched] = useState(function () {
     const stored = JSON.parse(localStorage.getItem("watched"));
-    return stored;
+    return stored || [];
   });
 
   const [isLoading, setIsLoading] = useState(false);
