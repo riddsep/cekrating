@@ -15,7 +15,11 @@ export const API_KEY = "23d8456";
 
 export default function App() {
   const [movies, setMovies] = useState([]);
-  const [watched, setWatched] = useState([]);
+  const [watched, setWatched] = useState(function () {
+    const stored = JSON.parse(localStorage.getItem("watched"));
+    return stored;
+  });
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
@@ -35,6 +39,13 @@ export default function App() {
   function handleDeleteWatched(id) {
     setWatched((movie) => movie.filter((movie) => movie.imdbID !== id));
   }
+
+  useEffect(
+    function () {
+      localStorage.setItem("watched", JSON.stringify(watched));
+    },
+    [watched]
+  );
 
   useEffect(() => {
     const controller = new AbortController();
