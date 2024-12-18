@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { API_KEY } from "../App";
+import { API_KEY } from "../useMovies";
 import { Loader } from "./Loader";
 import StarRating from "./StarRating";
 
