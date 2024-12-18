@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { API_KEY } from "../useMovies";
+import { API_KEY } from "../hooks/useMovies";
 import { Loader } from "./Loader";
 import StarRating from "./StarRating";
-import { useKey } from "../useKey";
+import { useKey } from "../hooks/useKey";
 
 export function MoviesDetails({
   selectedId,

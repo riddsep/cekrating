@@ -10,8 +10,8 @@ import { MovieList } from "./components/MovieList";
 import { MoviesDetails } from "./components/MoviesDetails";
 import { WatchedSummary } from "./components/WatchedSummary";
 import { WatchedMoviesList } from "./components/WatchedMoviesList";
-import { useMovies } from "./useMovies";
-import { useLocalStorage } from "./useLocalStorage";
+import { useMovies } from "./hooks/useMovies";
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
 export default function App() {
   const [query, setQuery] = useState("");
